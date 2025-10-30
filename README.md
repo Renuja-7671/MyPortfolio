@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Renuja Janith - Portfolio Website
+
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS featuring a dark theme with blue accents.
+
+## Features
+
+- 🎨 Modern dark theme with blue color scheme
+- 📱 Fully responsive design
+- ⚡ Built with Next.js 14 and TypeScript
+- 🎭 Smooth animations and transitions
+- 🎯 Sections: Home, About, Projects, Skills, Education, Contact
+- 🔗 Social media integration (GitHub, LinkedIn)
+- 📧 Contact form
+- 🎓 Education timeline
+- 🏆 Project showcase with technologies used
+
+## Tech Stack
+
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** React Icons
+- **Animations:** Framer Motion
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ installed on your machine
+- npm or yarn package manager
+
+### Installation
+
+1. Navigate to the project directory:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd portfolio-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open your browser and visit:
+```
+http://localhost:3000
+```
 
-## Learn More
+### Building for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+portfolio-website/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   ├── Education.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+├── public/
+├── package.json
+├── tsconfig.json
+├── tailwind.config.js
+└── next.config.js
+```
 
-## Deploy on Vercel
+## Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Updating Personal Information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Hero Section** (`components/Hero.tsx`): Update name, title, and bio
+2. **About Section** (`components/About.tsx`): Modify location and stats
+3. **Projects** (`components/Projects.tsx`): Add/edit projects with GitHub links
+4. **Skills** (`components/Skills.tsx`): Update technologies and skills
+5. **Education** (`components/Education.tsx`): Modify education and certifications
+6. **Contact** (`components/Contact.tsx`): Update email and social links
+
+### Replacing Profile Image
+
+Replace the placeholder in `components/Hero.tsx` with your actual photo:
+
+```tsx
+<img
+  src="/your-photo.jpg"
+  alt="Renuja Janith"
+  className="w-full h-full object-cover"
+/>
+```
+
+Place your photo in the `public` folder.
+
+### Changing Colors
+
+Edit `tailwind.config.js` to customize the color scheme:
+
+```javascript
+colors: {
+  primary: {
+    // Your custom colors
+  }
+}
+```
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Deploy with one click
+
+### Netlify
+
+1. Push your code to GitHub
+2. Connect your repository on [Netlify](https://netlify.com)
+3. Set build command: `npm run build`
+4. Set publish directory: `.next`
+
+## Contact
+
+**Renuja Janith**
+- Email: renujajanith7671@gmail.com
+- GitHub: [Renuja-7671](https://github.com/Renuja-7671)
+- LinkedIn: [renuja-janith](https://www.linkedin.com/in/renuja-janith-381587279)
+
+## License
+
+This project is open source and available for personal use.
+
+---
+
+Built with ❤️ by Renuja Janith
