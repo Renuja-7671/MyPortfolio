@@ -75,14 +75,14 @@ export default function About() {
 
             <div className="card-gradient p-6 rounded-xl border border-gray-800 hover:border-primary-600 transition-all duration-300 transform hover:scale-105">
               <h3 className="text-4xl font-bold text-primary-400 mb-2">
-                1.41
+                3.78 / 4.00
               </h3>
-              <p className="text-gray-400">Z-Score</p>
+              <p className="text-gray-400">Current GPA</p>
             </div>
 
             <div className="card-gradient p-6 rounded-xl border border-gray-800 hover:border-primary-600 transition-all duration-300 transform hover:scale-105">
-              <h3 className="text-4xl font-bold text-primary-400 mb-2">8A+</h3>
-              <p className="text-gray-400">O/L Results</p>
+              <h3 className="text-4xl font-bold text-primary-400 mb-2">1.41</h3>
+              <p className="text-gray-400">Z-Score</p>
             </div>
           </div>
         </div>
